@@ -1,9 +1,6 @@
 # Whales
 
-Projet pour le module *Personnalisation et recommandation sur le web*. Équipe de Justine Denis, Sebastian Faller et Axel Rozo Brézillac.
-
-## Pré-requis
-1. Un système d'exploitation de type Unix
+Projet pour le module *Personnalisation et recommandation sur le web*. Équipe composée de Esteban Gobert et Mélissa L'Hénoret.
 
 ## Installation
 1. Installez ElasticSearch
@@ -29,8 +26,8 @@ $ node server.js # lance le serveur sur le port 8443
 6. Créez un compte, ou utilisez le compte existant :
 
 ```
-utilisateur : ju
-mot de passe : ju
+utilisateur : mel
+mot de passe : mel
 ```
 
 7. Ajoutez des données dans la base de données en utilisant les champs suivants :
