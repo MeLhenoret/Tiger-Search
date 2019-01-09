@@ -1,0 +1,33 @@
+<div class="row">
+        <link rel="stylesheet" href="../css/styles.css">
+    <div class="col-md-5"></div>
+    <div class="col-md-5">
+        <h1 id="titre">Tiger</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+        <img src="../Tiger.png" alt="Whales - logo" style="width:50%;height:60%;">
+    </div>
+    <a href="/#!/search" class="btn btn-info" role="button">Search</a>
+
+    <br><br><br>
+    <div class="col-md-9">
+        <div class="col-md-2">
+            <input type="text" class="form-control" ng-model="similarAuthorQuery" title="Search" placeholder="Similar Author"/>
+        </div>
+        <div class="col-md-2">
+            <input type="submit" ng-click="similarSubmit()" class="btn btn-primary"/>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <ol>
+        <li ng-repeat="author in similarAuthors">
+            {{author}}
+        </li>
+    </ol>
+</div>

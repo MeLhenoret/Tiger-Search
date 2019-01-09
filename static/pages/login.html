@@ -1,0 +1,74 @@
+<div>
+        <link rel="stylesheet" href="../css/styles.css">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h1 class="text-primary" id="titre">Connexion</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+            <img src="../Tiger.png" alt="Whales - logo" style="width:50%;height:60%;">
+        </div>
+        <div class="col-md-8">
+            <h2> Tiger </h2>
+            <h5> Sur ce site web vous pouvez rechercher les documents scientifiques de l'archive HAL</h5>
+        </div>
+    </div>
+
+    <br />
+
+    <div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="login">Login</label>
+                    <input type="text" class="form-control" id="login" ng-model="username" name="username">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="pwd">Password</label>
+                    <input type="password" class="form-control" id="pwd" ng-model="password" name="password">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <br>
+                <button type="submit" class="btn btn-primary" ng-click="register()">Subscribe</button>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-2">
+                    <br>
+                    <button type="submit" class="btn btn-primary" ng-click="login()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- Message d'erreur si le mot de pass ou login est incorect -->
+        <div class="row">
+            <br>
+            <div class="col-md-3"></div>
+            <div class="col-md-4">
+                <div ng-if="errorMdp" class=" alert alert-danger" >
+                    The password is not correct
+                </div>
+                <div ng-if="errorUserName" class="row ; alert alert-danger">
+                    The login is not correct
+                </div>
+                <div ng-if="errorAlreadyUse" class="row ; alert alert-danger">
+                    This login is already used. Choice another.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
