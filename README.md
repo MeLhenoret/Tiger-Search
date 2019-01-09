@@ -1,6 +1,6 @@
 # Search Tiger
 
-Projet pour le module *Personnalisation et recommandation sur le web*. Équipe composée de Esteban Gobert et Mélissa L'Hénoret.
+Projet pour le module *Personnalisation et Systèmes de Recommandation*. Équipe composée de Esteban Gobert et Mélissa L'Hénoret.
 
 ## Installation
 1. Installez ElasticSearch
