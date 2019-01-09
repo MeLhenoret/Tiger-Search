@@ -203,14 +203,18 @@ app.get('/similar', function(req, res) {
     .then(response => {
         // Then, get document id and request more like
 
-        let ids = []
+        if(response.data.hits.length === 0) {
+            res.send("no hits !");
+        }
+
+        let ids = [];
         response.data.hits.hits.forEach(hit => {
             ids.push({
                 _index: "doc",
                 _type: "entry",
                 _id: hit._id
             })
-        })
+        });
 
         axios({
             url: "http://localhost:9200/_search",
@@ -234,7 +238,7 @@ app.get('/similar', function(req, res) {
             res.send(response.data.hits.hits)
         })
         .catch(err => {
-            console.log(err)
+            // console.log(err);
             res.send('{"error":90}')
         })
 
