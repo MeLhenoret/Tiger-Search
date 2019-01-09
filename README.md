@@ -19,7 +19,7 @@ $ node server.js # lance le serveur sur le port 8443
 
 4. Dans votre navigateur, rendez-vous à l'adresse suivante (le site utilisant un certificat auto-signé, pensez à l'accepter) `https://localhost:8443`
 
-5. Cliquez sur le lien bleu pour lancer l'application :
+5. Cliquez sur le lien "se connecter" pour lancer l'application :
 
 ![Capture d'écran 1](Ecran1.png)
 
