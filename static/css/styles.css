@@ -9,3 +9,6 @@ a{
 a:hover{
     color: orangered;
 }
+#italic{
+    font-style: italic;
+}

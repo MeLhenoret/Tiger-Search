@@ -1,4 +1,4 @@
-# Whales
+# Search Tiger
 
 Projet pour le module *Personnalisation et recommandation sur le web*. Équipe composée de Esteban Gobert et Mélissa L'Hénoret.
 
